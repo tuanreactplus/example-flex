@@ -35,13 +35,23 @@
 .step-wrapper{
   display: flex;
   flex-direction: row;
-  gap: 5px;
+  min-height: 600px;
 }
 .step-item{
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 5px;
+}
+.image-wrapper {
+  width: 100%;
+  display: flex;
+
+}
+.step-item img {
+  object-fit: cover;
+  flex-direction: row;
+  align-items: center;
 }
 @keyframes App-logo-spin {
   from {
@@ -66,8 +76,9 @@
 @media (max-width: 768px) {
   .step-wrapper{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 5px;
+    height: auto;
     align-items: center;
   }
 }
